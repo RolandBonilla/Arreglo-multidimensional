@@ -1,1 +1,14 @@
-
+# Definir un diccionario con información personal ficticia
+informacion_personal = 
+{"nombre": "Andres Guevara","edad": 25,"ciudad": "Ciudad Puyo","profesion": "Ingeniero en sistemas"}
+# Modificar el valor asociado con la clave "ciudad" a "Ciudad Ambato"
+informacion_personal["ciudad"] = "Ciudad Ambato"
+# Modificar el valor asociado con la clave "profesion" a "Ingeniero civil"
+informacion_personal["profesion"] = "Ingeniero civil"
+# Verificar si la clave "telefono" no está presente y agregarla con un número ficticio
+if "telefono" not in informacion_personal:
+    informacion_personal["telefono"] = "0998452345"
+# Eliminar la clave "edad" del diccionario, ya que no es necesaria
+informacion_personal.pop("edad", None)
+# Imprimir el diccionario final con la información actualizada
+print(informacion_personal)
